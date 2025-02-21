@@ -112,5 +112,10 @@ class ProductRepositoryTest {
         productRepository.deleteAll(List.of(product1, product2));
     }
 
-    
+    @Test
+    void countMethod(){
+        long id = productRepository.count();
+
+        System.out.println("Number of items in the database is: " + id);
+    }
 }
